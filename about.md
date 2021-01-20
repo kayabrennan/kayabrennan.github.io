@@ -20,7 +20,7 @@ permalink: /about/
 </div>
 
 <section id="photos">  
-    <img src="/kb20/images/about/me.jpg"/>
+    <img src="{{ site.baseurl }}/images/about/me.jpg"/>
 </section>
 
 
