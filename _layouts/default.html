@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.name }} {{ page.title }}</title>
+    {% include meta.html %}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <style>
+        body{padding-top:0;}
+        .wrapper-masthead{position: absolute;
+                        width: 100%;
+                        background-color: white;}
+                        .grid{}
+                        .grid-item{width:calc(50%);background-color:green;}
+                        .grid-item { margin-bottom:10px;float:right;
+  
+ 
+}
+
+.grid-item img{object-fit: fill;height:auto;width:600px;}
+    </style>
+ </head>
+ <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+		  <style></style>
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+          </div>
+
+		  {% include nav.html %}
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+
+		<footer class="footer" ><div style="position:fixed; bottom:5px; left:5px; font-size:13px;"> 
+        	<a href="#top"><div class="top" style="font-size:32px;display:inline-block;transform:rotate(270deg); color:rgba(0,0,0,0.5);">&#x21DD;</div> </a>
+        </footer>
+
+
+
+  </body>
+
+</html>
